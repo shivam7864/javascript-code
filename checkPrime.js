@@ -1,17 +1,17 @@
-function checkPrime(n){
-    if (n < 2) return false;
-    for(let i=2;i<=Math.sqrt(n);i++){
-        if(n % i == 0 )return false;
-    }
-    return true;
+function checkPrime(n) {
+  if (n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i == 0) return false;
+  }
+  return true;
 }
 
-function generatePrime(n){
-const primes = [];
+function generatePrime(n) {
+  const primes = [];
   let num = 2;
 
-  while(primes.length !=n){
-    if(checkPrime(num))primes.push(num);
+  while (primes.length != n) {
+    if (checkPrime(num)) primes.push(num);
     num++;
   }
   return primes;

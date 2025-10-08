@@ -10,7 +10,7 @@ function reverse(str) {
   return newStr;
 }
 
-console.log(reverse(str));
+console.log("Reverse is - ",reverse(str));
 
 function reverseWord(str) {
   let ans = "";
@@ -45,5 +45,5 @@ function reverseWordInString(str) {
   return ans;
 }
 
-console.log(reverseWord(str));
-console.log(reverseWordInString(str));
+console.log("Reverse Word is - ",reverseWord(str));
+console.log("reverseWordInString is - ",reverseWordInString(str));
